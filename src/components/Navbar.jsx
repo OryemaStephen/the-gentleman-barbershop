@@ -16,6 +16,12 @@ const Navbar = () => {
     setActiveSection(location.pathname);
   }, [location]);
 
+  const handleLinkClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   const getLinkClass = (path) => {
     return activeSection === path ? 'text-coffee-brown border-b border-[#C3B299]' : 'text-white';
   };
@@ -24,7 +30,7 @@ const Navbar = () => {
     <nav className="bg-black fixed w-full z-10 top-0 shadow">
       <div className="container mx-auto flex flex-wrap items-center justify-between py-2 px-4">
         <div className="flex items-center">
-          <Link className="text-white font-bold text-2xl lg:text-4xl" to="/">
+          <Link className="text-white font-bold text-2xl lg:text-4xl" to="/" onClick={handleLinkClick}>
             <img
               src={logo}
               alt="Logo"
@@ -41,13 +47,14 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`w-full lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
+          className={`w-full transition-all duration-500 ease-in-out lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-2 lg:mt-0">
             <li>
               <Link
-                className={`block lg:inline-block text-xl font-medium no-underline py-2 px-4 ${getLinkClass('/')}`}
+                className={`w-full block lg:inline-block text-xl font-medium no-underline py-2 px-4 ${getLinkClass('/')}`}
                 to="/"
+                onClick={handleLinkClick}
               >
                 Home
               </Link>
@@ -56,6 +63,7 @@ const Navbar = () => {
               <Link
                 className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass('/about')}`}
                 to="/about"
+                onClick={handleLinkClick}
               >
                 About
               </Link>
@@ -64,6 +72,7 @@ const Navbar = () => {
               <Link
                 className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass('/services')}`}
                 to="/services"
+                onClick={handleLinkClick}
               >
                 Services
               </Link>
@@ -72,6 +81,7 @@ const Navbar = () => {
               <Link
                 className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass('/gallery')}`}
                 to="/gallery"
+                onClick={handleLinkClick}
               >
                 Gallery
               </Link>
@@ -80,6 +90,7 @@ const Navbar = () => {
               <Link
                 className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass('/team')}`}
                 to="/team"
+                onClick={handleLinkClick}
               >
                 Team
               </Link>
@@ -88,6 +99,7 @@ const Navbar = () => {
               <Link
                 className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass('/contact')}`}
                 to="/contact"
+                onClick={handleLinkClick}
               >
                 Contact
               </Link>
