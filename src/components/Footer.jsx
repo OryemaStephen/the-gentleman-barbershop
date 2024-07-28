@@ -24,7 +24,7 @@ const Footer = () => {
             ideas to life by giving it that extra feel.
           </p>           
         </div>
-        <div className='grid-cols-1 pt-3 md:pt-1 border-l-[1px] border-[#C3B299] pl-2'>
+        <div className='grid-cols-1 pt-3 md:pt-1 sm:border-l-[1px] border-[#C3B299] pl-2'>
           <h2 className='text-[#C3B299] text-2xl py-2'>Browse</h2>
           <ul className='text-white text-lg'>
             <li>
@@ -63,7 +63,7 @@ const Footer = () => {
             </span>
           </div>               
         </div>
-        <div className='grid-cols-1 pt-3 md:pt-1 border-l-[1px] border-[#C3B299] pl-2'>
+        <div className='grid-cols-1 pt-3 md:pt-1 sm:border-l-[1px] border-[#C3B299] pl-2'>
           <h2 className='text-[#C3B299] text-2xl py-2'>Stay In Touch</h2> 
           <p className='text-white text-lg'>
             Sign up for Murdock newsletter to stay up to date
