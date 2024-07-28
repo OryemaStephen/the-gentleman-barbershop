@@ -47,7 +47,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`w-full transition-all duration-500 ease-in-out lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
+          className={`w-full transition-transform duration-500 ease-in-out lg:flex lg:items-center lg:w-auto ${isOpen ? 'block' : 'hidden'}`}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-2 lg:mt-0">
             <li>
