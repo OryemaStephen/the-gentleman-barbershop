@@ -1,6 +1,10 @@
+import HomeCarousel from "../components/HomeCarousel"
+
 const Home = () => {
   return (
-    <div className="pt-44 h-[150vh]">Home</div>
+    <div>
+      <HomeCarousel />
+    </div>
   )
 }
 
