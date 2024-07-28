@@ -1,6 +1,6 @@
-import AboutBg from "../components/AboutBg"
-import AboutHistory from "../components/AboutHistory"
-import Footer from "../components/Footer"
+import AboutBg from "../components/AboutBg";
+import AboutHistory from "../components/AboutHistory";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       <AboutBg />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

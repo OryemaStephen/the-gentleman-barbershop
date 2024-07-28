@@ -1,42 +1,45 @@
-import { useState } from 'react';
-import HomeCarouselBgImage from './HomeCarouselBgImage';
-import image1 from '../assets/slider01.jpg';
-import image2 from '../assets/slider02.jpg';
-import image3 from '../assets/slider03.jpg';
-import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+import { useState } from "react";
+import HomeCarouselBgImage from "./HomeCarouselBgImage";
+import image1 from "../assets/slider01.jpg";
+import image2 from "../assets/slider02.jpg";
+import image3 from "../assets/slider03.jpg";
+import {
+  MdOutlineArrowForwardIos,
+  MdOutlineArrowBackIos,
+} from "react-icons/md";
 
 const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { 
-      heading: 'The Barber Shop', 
-      paragraph: 'Welcome to Gentleman', 
-      button: 'See what we do',
-      backgroundImage: image1 
+    {
+      heading: "The Barber Shop",
+      paragraph: "Welcome to Gentleman",
+      button: "See what we do",
+      backgroundImage: image1,
     },
-    { 
-      heading: 'The Perfect Haircut', 
-      paragraph: 'Welcome to Gentleman', 
-      button: 'See what we do', 
-      backgroundImage: image2 
+    {
+      heading: "The Perfect Haircut",
+      paragraph: "Welcome to Gentleman",
+      button: "See what we do",
+      backgroundImage: image2,
     },
-    { 
-      heading: 'Fresh New Look', 
-      paragraph: 'Welcome to Gentleman', 
-      button: 'See what we do', 
-      backgroundImage: image3 
+    {
+      heading: "Fresh New Look",
+      paragraph: "Welcome to Gentleman",
+      button: "See what we do",
+      backgroundImage: image3,
     },
   ];
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1,
     );
   };
 
@@ -47,14 +50,14 @@ const HomeCarousel = () => {
           <div
             key={index}
             className={`absolute w-full h-full transition-opacity duration-1000 ease-in-out ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
+              index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
           >
-            <HomeCarouselBgImage 
-              paragraph={slide.paragraph} 
-              heading={slide.heading} 
-              button={slide.button} 
-              backgroundImage={slide.backgroundImage} 
+            <HomeCarouselBgImage
+              paragraph={slide.paragraph}
+              heading={slide.heading}
+              button={slide.button}
+              backgroundImage={slide.backgroundImage}
             />
           </div>
         ))}
@@ -76,7 +79,7 @@ const HomeCarousel = () => {
           <div
             key={index}
             className={`h-2 w-2 rounded-full ${
-              index === currentIndex ? 'bg-white' : 'bg-gray-500'
+              index === currentIndex ? "bg-white" : "bg-gray-500"
             }`}
           ></div>
         ))}
