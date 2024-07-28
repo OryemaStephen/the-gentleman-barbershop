@@ -1,4 +1,5 @@
 import AboutShop from "../components/AboutShop"
+import Footer from "../components/Footer"
 import HomeCarousel from "../components/HomeCarousel"
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <HomeCarousel />
       <AboutShop />
+      <Footer />
     </div>
   )
 }

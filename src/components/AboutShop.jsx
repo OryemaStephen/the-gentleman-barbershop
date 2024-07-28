@@ -4,7 +4,7 @@ import WordWithLines from "./WordWithLines"
 
 const AboutShop = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="w-full mx-auto p-4">
       <WordWithLines text="Introducing" />
       <div className=" w-full text-center">
         <h2 className="text-5xl font-bold pb-9">The Gentleman Barber Shop</h2>
