@@ -8,7 +8,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
 const TeamProfile = () => {
   return (
-    <div className="w-full md:pt-[75px] pt-[50px] px-5 pb-5">
+    <div className="w-full px-5 pb-5">
       <WordWithLeftLines text="Staff" />
       <div className="pt-5">
         <h2 className="text-3xl md:text-5xl font-bold">Our Barbers</h2>
