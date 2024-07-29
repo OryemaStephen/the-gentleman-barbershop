@@ -9,7 +9,7 @@ const Team = () => {
       <ShopOffers />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default Team;

@@ -5,12 +5,11 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <div>
-        <AboutBg />
-        <ContactSocial />
-        <Footer />
+      <AboutBg />
+      <ContactSocial />
+      <Footer />
     </div>
-  )
-  
+  );
 };
 
 export default Contact;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HomeCarouselBgImage from "./HomeCarouselBgImage";
 import image1 from "../assets/slider01.jpg";
 import image2 from "../assets/slider02.jpg";
@@ -42,6 +42,15 @@ const HomeCarousel = () => {
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1,
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1,
+      );
+    }, 5000); // Change slide every 5 seconds
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [slides.length]);
 
   return (
     <div className="relative w-full pb-4 h-screen overflow-hidden">
