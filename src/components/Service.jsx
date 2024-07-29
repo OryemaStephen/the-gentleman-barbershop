@@ -12,8 +12,10 @@ const Service = () => {
     <div className="py-10">
       <WordWithLines text="Features" />
       <div className="w-full text-center">
-        <h2 className="text-5xl font-bold pb-9">Our Services & Prices</h2>
-        <p className="w-full md:w-2/3 mx-auto text-[#C3B299] text-xl pb-8">
+        <h2 className="text-3xl md:text-5xl font-bold pb-9">
+          Our Services & Prices
+        </h2>
+        <p className="w-full md:w-2/3 mx-auto text-[#C3B299] text-lg md:text-xl pb-8">
           Wash + Cut, $13 . Wash and cut with electric trimmer and / or scissors
           with a razor finish. Shave, $15 . With blade. Preparation with foam
           and hot towel.
@@ -24,7 +26,7 @@ const Service = () => {
           <span className="text-center text-6xl w-full flex justify-center items-start">
             <MdChair />
           </span>
-          <h3 className="text-3xl font-bold py-4">Hair Cut</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">Hair Cut</h3>
           <p className="text-lg text-gray-600 ">
             Awesome and professional Haircut for only $15.
           </p>
@@ -33,7 +35,9 @@ const Service = () => {
           <span className="text-center text-6xl w-full flex justify-center items-start">
             <GiRazor />
           </span>
-          <h3 className="text-3xl font-bold py-4">Moustache Trim</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">
+            Moustache Trim
+          </h3>
           <p className="text-lg text-gray-600">
             Awesome and professional Moustache Trim for only $7.
           </p>
@@ -42,7 +46,7 @@ const Service = () => {
           <span className="text-6xl text-center w-full flex justify-center items-start">
             <FaCrutch />
           </span>
-          <h3 className="text-3xl font-bold py-4">Face Shave</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">Face Shave</h3>
           <p className="text-lg text-gray-600">
             Awesome and professional Facial Massage for only $20
           </p>
@@ -51,7 +55,7 @@ const Service = () => {
           <span className=" text-6xl text-center w-full flex justify-center items-start">
             <TbRazorElectric />
           </span>
-          <h3 className="text-3xl font-bold py-4">Beard Trim</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">Beard Trim</h3>
           <p className="text-lg text-gray-600">
             Awesome and professional BreadTrim for only $8
           </p>
@@ -60,7 +64,7 @@ const Service = () => {
           <span className="text-6xl text-center w-full flex justify-center items-start">
             <RiScissors2Fill />
           </span>
-          <h3 className="text-3xl font-bold py-4">Clipper Cut</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">Clipper Cut</h3>
           <p className="text-lg text-gray-600">
             Awesome and professional Clipper Cut for only $14.
           </p>
@@ -69,7 +73,9 @@ const Service = () => {
           <span className="text-6xl text-center w-full flex justify-center items-start">
             <TbMassage />
           </span>
-          <h3 className="text-3xl font-bold py-4">Facial Massage</h3>
+          <h3 className="text-2xl md:text-3xl font-bold py-4">
+            Facial Massage
+          </h3>
           <p className="text-lg text-gray-600">
             Awesome and professional Facial Massage for only $20.
           </p>

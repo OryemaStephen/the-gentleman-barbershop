@@ -3,10 +3,10 @@ import HomeCarouselBgImage from "./HomeCarouselBgImage";
 import image1 from "../assets/slider01.jpg";
 import image2 from "../assets/slider02.jpg";
 import image3 from "../assets/slider03.jpg";
-import {
-  MdOutlineArrowForwardIos,
-  MdOutlineArrowBackIos,
-} from "react-icons/md";
+// import {
+//   MdOutlineArrowForwardIos,
+//   MdOutlineArrowBackIos,
+// } from "react-icons/md";
 
 const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,17 +31,17 @@ const HomeCarousel = () => {
     },
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1,
-    );
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === slides.length - 1 ? 0 : prevIndex + 1,
+  //   );
+  // };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1,
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? slides.length - 1 : prevIndex - 1,
+  //   );
+  // };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,18 +71,18 @@ const HomeCarousel = () => {
           </div>
         ))}
       </div>
-      <button
+      {/* <button
         onClick={prevSlide}
-        className="ml-3 text-3xl absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded"
+        className="ml-1 text-3xl absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded"
       >
         <MdOutlineArrowBackIos />
       </button>
       <button
         onClick={nextSlide}
-        className="mr-3 text-3xl absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded"
+        className="mr-1 text-3xl absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded"
       >
         <MdOutlineArrowForwardIos />
-      </button>
+      </button> */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <div

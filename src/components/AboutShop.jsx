@@ -8,8 +8,10 @@ const AboutShop = () => {
     <div className="w-full mx-auto p-4">
       <WordWithLines text="Introducing" />
       <div className=" w-full text-center">
-        <h2 className="text-5xl font-bold pb-9">The Gentleman Barber Shop</h2>
-        <p className="w-full md:w-2/3 mx-auto text-[#C3B299] text-xl pb-8">
+        <h2 className="text-3xl md:text-5xl font-bold pb-9">
+          The Gentleman Barber Shop
+        </h2>
+        <p className="w-full md:w-2/3 mx-auto text-[#C3B299] text-lg md:text-xl pb-8">
           A barber is a person whose occupation is mainly to cut, dress, groom,
           style and shave men&apos;s and boys&apos; hair. A barber&apos;s place
           of work is known as a ``barber shop``

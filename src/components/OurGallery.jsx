@@ -16,7 +16,7 @@ const OurGallery = () => {
     { src: gallery4, title: "Trim Your Beard", paragraph: "Hair Shop" },
     {
       src: gallery5,
-      title: "New Design for Haircut shop 5",
+      title: "New Design for Haircut shop",
       paragraph: "New Style",
     },
     { src: gallery6, title: "Ready to go with us", paragraph: "Moment" },
@@ -38,7 +38,9 @@ const OurGallery = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center text-white flex-col justify-center transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
-            <h2 className="text-white text-3xl pb-10">{image.title}</h2>
+            <h2 className="text-white text-2xl md:text-3xl text-center pb-10">
+              {image.title}
+            </h2>
             <p className="text-lg pb-10">{image.paragraph}</p>
             <button
               type="button"

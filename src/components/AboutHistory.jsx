@@ -12,8 +12,10 @@ const AboutHistory = () => {
       </div>
       <div className="grid-cols-1 md:px-10 p-3 md:py-20 bg-black h-full flex flex-col justify-between ">
         <p className="underline text-[#C3B299]">Since 1979</p>
-        <h2 className="text-5xl font-bold py-6 text-white">Our History</h2>
-        <p className="text-justify text-white text-xl">
+        <h2 className=" text-3xl md:text-5xl font-bold py-6 text-white">
+          Our History
+        </h2>
+        <p className="text-justify text-white text-lg md:text-xl">
           The Gentleman Barber Shop is a classic upscale barbershop. We offer a
           variety of services, catering to everyone. Hounds is a
           gentleman&apos;s shop, reminiscent of the classic barbershop. We are
