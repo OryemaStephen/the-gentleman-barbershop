@@ -9,7 +9,7 @@ const HomeCarouselBgImage = ({
   backgroundImage,
 }) => (
   <div
-    className="h-full w-full flex items-center justify-center text-2xl bg-cover bg-center pt-20"
+    className="h-full w-full flex items-center justify-center text-2xl bg-cover object-cover object-center bg-center pt-20"
     style={{ backgroundImage: `url(${backgroundImage})` }}
   >
     <div className="text-white text-center">
