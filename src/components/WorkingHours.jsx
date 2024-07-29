@@ -3,7 +3,7 @@ import bg from "../assets/workinghours.jpg";
 
 const WorkingHours = () => {
   return (
-    <div className="relative w-full h-[70vh] md:h-[80vh]">
+    <div className="relative w-full h-[60vh] md:h-[80vh]">
       <div
         className="w-full h-full bg-fixed bg-center bg-cover"
         style={{
