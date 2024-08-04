@@ -29,11 +29,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black fixed w-full z-10 top-0 shadow">
-      <div className="container mx-auto flex flex-wrap items-center justify-between py-2 px-4">
+    <nav className="fixed top-0 z-10 w-full bg-black shadow">
+      <div className="container flex flex-wrap items-center justify-between px-4 py-2 mx-auto">
         <div className="flex items-center">
           <Link
-            className="text-white font-bold text-2xl lg:text-4xl"
+            className="text-2xl font-bold text-white lg:text-4xl"
             to="/"
             onClick={handleLinkClick}
           >
@@ -55,7 +55,7 @@ const Navbar = () => {
         <div
           className={`w-full transition-transform duration-500 ease-in-out lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
         >
-          <ul className="flex flex-col lg:flex-row lg:space-x-6 mt-2 lg:mt-0">
+          <ul className="flex flex-col mt-2 lg:flex-row lg:space-x-6 lg:mt-0">
             <li>
               <Link
                 className={`w-full block lg:inline-block text-xl font-medium no-underline py-2 px-4 ${getLinkClass("/")}`}
@@ -99,6 +99,15 @@ const Navbar = () => {
                 onClick={handleLinkClick}
               >
                 Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`block lg:inline-block text-xl no-underline py-2 px-4 ${getLinkClass("/reservation")}`}
+                to="/reservation"
+                onClick={handleLinkClick}
+              >
+                Reservation
               </Link>
             </li>
             <li>
