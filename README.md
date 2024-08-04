@@ -20,6 +20,7 @@ I built this clone from scratch to completion.
 ## Features
 
 - Different pages showing the history, services, gallery, and contact of the barbershop.
+- Reservation page to make an appointment using Calendly.
 
 ## Contact
 
